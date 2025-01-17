@@ -1,0 +1,45 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'codec2'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=codec2",
+                    "--package=codec2"
+                ],
+                "filter": {
+                    "name": "codec2",
+                    "kind": "bin"
+                }
+            },
+            "args": [".\\test","--full-path", "-o", "codetest.text"],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'codec2'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=codec2",
+                    "--package=codec2"
+                ],
+                "filter": {
+                    "name": "codec2",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
