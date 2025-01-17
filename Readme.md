@@ -1,5 +1,3 @@
-Sure, here's a `README.md` file for your code collator application:
-
 **Code Collator**
 
 This is a Rust application that helps you find and summarize code files within a specified directory.
@@ -9,7 +7,7 @@ This is a Rust application that helps you find and summarize code files within a
 * Finds files based on user-defined extensions (e.g., `.txt`, `.py`, `.java`).
 * Allows skipping specific extensions and folders.
 * Generates a summary report with file paths and content (optional).
-* Supports parallel processing for faster execution (optional).
+* **Parallel processing is currently not functioning properly.**
 
 **Installation**
 
