@@ -1,5 +1,3 @@
-Sure, here's a `README.md` file for your code collator application:
-
 **Code Collator**
 
 This is a Rust application that helps you find and summarize code files within a specified directory.
